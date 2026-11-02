@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CampusConnect | Contact" />
+    <title>CampusConnect | Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <p><strong>CampusConnect</strong> | University Student Portal</p>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a> | <a href="courses.html">Courses</a> |
+        <a href="timetable.html">Timetable</a> |
+        <a href="registration.html">Registration</a> |
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="animate__animated animate__fadeInDown">
+        Contact the administration
+      </h1>
+      <p>
+        Use this form to send a sample enquiry. It does not deliver messages
+        because this project is HTML-only.
+      </p>
+      <address>
+        CampusConnect University<br />100 College Road<br />Nashik, Maharashtra,
+        India
+      </address>
+      <p>
+        Email:
+        <a href="mailto:admin@campusconnect.example"
+          >admin@campusconnect.example</a
+        ><br />Phone: <a href="tel:+912025550100">+91 20 2555 0100</a>
+      </p>
+      <form action="contact.html" method="get">
+        <fieldset>
+          <legend>Enquiry form</legend>
+          <p>
+            <label for="contact-name">Name</label
+            ><input id="contact-name" name="name" type="text" required />
+          </p>
+          <p>
+            <label for="contact-email">Email</label
+            ><input id="contact-email" name="email" type="email" required />
+          </p>
+          <p>
+            <label for="topic">Topic</label
+            ><select id="topic" name="topic" required>
+              <option value="">Select topic</option>
+              <option>Admissions</option>
+              <option>Courses</option>
+              <option>Timetable</option>
+              <option>Fees</option>
+              <option>Other</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label
+            ><textarea
+              id="message"
+              name="message"
+              rows="5"
+              cols="40"
+              required
+            ></textarea>
+          </p>
+        </fieldset>
+        <button type="submit">Send enquiry</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        &copy; 2026. Educational assignment demonstration. Replace sample
+        details before submission.
+      </p>
+    </footer>
+  </body>
+</html>
